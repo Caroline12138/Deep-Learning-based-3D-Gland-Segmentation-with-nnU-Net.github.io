@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        .p1{
+            margin-top: 80px;
+            margin-left: 180px;
+            font-size: 35px;
+        }
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px white;
+            padding: 15px 32px;
+            font-size: 20px;
+            border-radius: 8px;
+            float: left;
+          }
+        .button1:hover {background-color: #e7e7e7;}
+        .ab {
+            background-color:rgb(231, 237, 234);
+            width:1100px;
+            padding: 20px;
+            margin: auto;
+            text-align: left;
+            font-size: 20px;
+          }
+          .img1 {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+        a:hover {
+          color: rgb(12, 96, 145);
+          background-color: transparent;
+          text-decoration: none;
+        }
+        figcaption {
+            font-style: italic;
+            padding: 2px;
+            text-align: center;
+        }     
+          .row {
+            display: flex;
+            padding: 30px;
+            width: 60%;
+            margin: auto;
+          }
+          
+          /* Create three equal columns that sits next to each other */
+          .column {
+            flex: 50%;
+            padding: 5px;
+          }
+
+          .fig{
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <a href="cse455.html" class="button button1">Home</a>
+    <a href="introduction.html" class="button button1">Introduction</a>
+    <a href="dataset.html"  class="button button1">Data</a>
+    <a href="method.html"  class="button button1">Methdology</a>
+    <a href="experiment.html"  class="button button1">Experiment & Results</a>
+    <a href="Conclusion.html"  class="button button1">Conclusion</a>
+    <br>
+    <div class = "p1">
+    <p>Dataset</p>
+    </div>
+    <div class="row">
+        <div class="column">
+          <img src="../Dataset/blk8_nuc.gif" style="width:100%">
+          <figcaption>Fig.4 - Nuclei channel 3D image</figcaption>
+        </div>
+        <div class="column">
+          <img src="../Dataset/blk8_cyto.gif" style="width:100%">
+          <figcaption>Fig.5 - Cytoplasm channel 3D image</figcaption>
+        </div>
+      </div>
+    <div class = "ab"> 
+        <p>
+          The original data were taken by the lightsheet microscopes in <a href = "https://washington-seattle.digication.com/jonliu/Peer-reviewed/published">Molecular Biophotonics Laboratory</a> which contains nuclei and 
+          cytoplasm channels (or hematoxylin and eosin H&E channels)<a class = "fig">(Fig.4&5)</a>. For memory 
+          limit reasons, we use 4x downsampled 3D images (still got ~7000*512*350 in pixel size) for training 
+          and inference. There are more than 100 biopsies with ground truth segmentation masks generated previously 
+          by traditional thresholding-based CV segmentation methods and verified by senior pathologists <a class = "fig">(Fig.6)</a>. 
+          The segmentation masks contain 3 kinds of labels, epithelium, lumen and stroma. We can use those for training 
+          in a supervised manner. The inputs are two channels (nuclei and cytoplasm) images and the targets are those 
+          corresponding ground truth segmentation masks.
+        </p>
+      </div>
+      <figure>
+        <img src="../Figure/figure6.png" class = "img1">
+        <figcaption>Fig.6 - 3D segmentation masks </figcaption>
+        </figure>
+</body>
+</html>
