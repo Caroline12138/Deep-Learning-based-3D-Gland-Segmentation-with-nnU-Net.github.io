@@ -1,2 +1,2 @@
-# This is the repo for Deep Learning-based 3D Gland Segmentation with nnU-Net project
-# Here's the link for the website "file:///Users/xinran/Documents/GitHub/Deep-Learning-based-3D-Gland-Segmentation-with-nnU-Net.github.io/index.html
+ This is the repo for Deep Learning-based 3D Gland Segmentation with nnU-Net project
+[Website](file:///Users/xinran/Documents/GitHub/Deep-Learning-based-3D-Gland-Segmentation-with-nnU-Net.github.io/index.html)
